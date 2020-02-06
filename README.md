@@ -5,7 +5,7 @@ html5 audio player(with playlist) using flexbox, svg, css animations and  js api
 
 forked from @k-ivan at http://codepen.io/k-ivan/pen/pJMLmJ
 
-demo: [html5-audio-player](https://likev.github.io/html5-audio-player/ 'html5-audio-player demo')
+demo: [html5-audio-player](https://scrawny-drug.000webhostapp.com/ 'html5-audio-player demo')
 
 ![html5-audio-player-screenshot](html5-audio-player.png)
 
