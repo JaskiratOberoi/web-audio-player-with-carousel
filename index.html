@@ -13,22 +13,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        html {
+            background-color: black;
+        }
+        
         .body {
-            background: rgba(27, 27, 27, 0.933);
+            /* background-color: black; */
+            display: flex;
+            flex-direction: row;
         }
         
         .container {
+            background-color: black;
             width: 90vw;
+            display: flex;
+            align-self: center;
+            justify-self: center;
         }
         
         .carousel-inner>.item>img,
         .carousel-inner>.item>a>img {
-            width: 95%;
+            width: 100vw;
             margin: auto;
         }
         
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin-top: 10rem;
+            }
+        }
+        
         #player {
+            /* background-color: black; */
             position: fixed;
+            display: flex;
+            float: left;
             bottom: 0;
             left: 0;
             right: 0;
@@ -41,7 +60,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="background-color: black;padding: 0;">
         <br />
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -53,9 +72,9 @@
             </ol> -->
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="images/A.png" alt="Chania" width="460" height="345" />
+            <div class="carousel-inner" role="listbox" style="background-color: black;padding: 0;">
+                <div class="item active" style="height: 60vh;">
+                    <img src="images/D.jpg" alt="Chania" />
                     <div class="carousel-caption">
                         <h3>Chania</h3>
                         <p>
@@ -65,7 +84,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/C.png" alt="Chania" width="460" height="345" />
+                    <img src="images/C.png" alt="Chania" />
                     <div class="carousel-caption">
                         <h3>Chania</h3>
                         <p>
@@ -75,7 +94,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/B.png" alt="Flower" width="460" height="345" />
+                    <img src="images/B.png" alt="Flower" />
                     <div class="carousel-caption">
                         <h3>Flowers</h3>
                         <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -83,7 +102,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/A.png" alt="Flower" width="460" height="345" />
+                    <img src="images/A.png" alt="Flower" />
                     <div class="carousel-caption">
                         <h3>Flowers</h3>
                         <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -105,7 +124,7 @@
     <!-- Carousel end-->
 
     <!-- Audio player container-->
-    <div id="player"></div>
+    <div id="player" style="background-color: black;padding: 0;"></div>
 
     <!-- Audio player js begin-->
     <script src="js/AudioPlayer.js"></script>
